@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balance_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".BalanceDisplayActivity">
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="328dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="sans-serif-black"
+        android:text="Send"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/receive_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance_text"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <Button
+        android:id="@+id/receive_button"
+        android:layout_width="324dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-black"
+        android:text="RECEIVE"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="335dp"
+        android:layout_height="82dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:backgroundTint="#8BC34A"
+        android:outlineProvider="background"
+        android:text="0 TRBTC"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <ImageButton
+        android:id="@+id/activity_button"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/balance_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
